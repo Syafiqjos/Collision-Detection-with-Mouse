@@ -26,9 +26,9 @@ public class SpaceShip extends Sprite {
         getImageDimensions();
     }
 
-    public void move(MouseEvent e) {
-    	x = e.getX();
-    	y = e.getY();
+    public void move(int posX, int posY) {
+    	x = posX;
+    	y = posY;
     }
 
     public List<Missile> getMissiles() {
