@@ -11,6 +11,8 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
+import java.awt.event.MouseEvent;
+import java.awt.event.MouseMotionListener;
 import java.util.ArrayList;
 import java.util.List;
 import javax.swing.JPanel;
@@ -48,6 +50,7 @@ public class Board extends JPanel implements ActionListener {
     private void initBoard() {
 
         addKeyListener(new TAdapter());
+        addMouseMotionListener(new MouseHandler());
         setFocusable(true);
         setBackground(Color.BLACK);
         ingame = true;
@@ -130,7 +133,7 @@ public class Board extends JPanel implements ActionListener {
 
         inGame();
 
-        updateShip();
+//        updateShip();
         updateMissiles();
         updateAliens();
 
@@ -146,13 +149,13 @@ public class Board extends JPanel implements ActionListener {
         }
     }
 
-    private void updateShip() {
-
-        if (spaceship.isVisible()) {
-            
-            spaceship.move();
-        }
-    }
+//    private void updateShip(MouseEvent e) {
+//
+//        if (spaceship.isVisible()) {
+//            
+//            spaceship.move(e);
+//        }
+//    }
 
     private void updateMissiles() {
 
@@ -225,11 +228,22 @@ public class Board extends JPanel implements ActionListener {
         }
     }
 
+    private class MouseHandler implements MouseMotionListener {
+
+        @Override
+        public void mouseDragged(MouseEvent e) {
+        }
+
+        @Override
+        public void mouseMoved(MouseEvent e) {
+        	spaceship.move(e);
+        }
+        }
+        
     private class TAdapter extends KeyAdapter {
 
         @Override
         public void keyReleased(KeyEvent e) {
-            spaceship.keyReleased(e);
         }
 
         @Override
