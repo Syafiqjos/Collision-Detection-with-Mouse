@@ -1,7 +1,3 @@
-Memberi batasan pada x dan y border
-Memberi listener untuk mouse klick dan menembak
-Menambah fungsi mouseMovement dan dragMouseV dan moveMotion
-
 ## Penambahan Batasan Border untuk Move Spaceship yang dijalankan oleh Mouse Motion
 Untuk mencegah Spaceship kita keluar dari window dan selalu berada didalam game window, kita harus memberikan batas untuk pencegahan tersebut. Untuk mempermudah abstraksi, kami mengubah parameter fungsi `move` dari Class `SpaceShip` dari `MouseEvent e` menjadi `int posX` dan `int posY`. Sehingga kami dapat mencegah border pada Class `Board` dan pada bagian Inner Class `MouseHandler`.
 
@@ -106,6 +102,6 @@ public void mouseMoved(MouseEvent e) {
 }
 ```
 
-Dengan cara ini, bug dapat diperbaiki dengan baik.
+Dengan cara ini, bug conflict ini dapat diperbaiki dengan baik.
 
 # Terima Kasih
