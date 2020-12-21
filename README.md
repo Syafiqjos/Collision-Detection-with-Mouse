@@ -3,16 +3,16 @@ Merupakan sebuah tugas dari mata kuliah Pemrograman Berbasis Objek, yaitu mengap
 
 # Pemrograman Berbasis Objek C
 ## Anggota Kelompok :
-- Richard Asmarakandi - 05111940000017 - @soraasmarakandi
-- Ahmad Syafiq Aqil Wafi - 05111940000089 - @Syafiqjos
-- Afifan Syafaqi Yahya - 05111940000234 - @anakpayah
+- Richard Asmarakandi - 05111940000017 - [@soraasmarakandi](http://github.com/soraasmarakandi)
+- Ahmad Syafiq Aqil Wafi - 05111940000089 - [@Syafiqjos](http://github.com/Syafiqjos)
+- Afifan Syafaqi Yahya - 05111940000234 - [@anakpayah](http://github.com/anakpayah)
 
 Game ini adalah permainan tembak - tembakan pesawat. Pemain menjalankan SpaceShip yang memiliki misi atau objective untuk mengalahkan Alien - alien dengan cara menembak mereka dengan missile SpaceShip yang dimiliki Pemain. Apa bila Pemain dapat mengalahkan semua Alien dan selamat hingga akhir maka menang, sedangkan jika pemain terkena alien maka pemain akan kalah.
 Pada proyek ini terdapat updates atau perubahan antara lain adalah, pergerakan SpaceShip menggunakan Mouse, penambahan batas pergerakan SpaceShip, penambahan tembak missile dengan mouse dan juga terdapat demo video youtube yang ada.
 
 # Berikut adalah tampilan gameplay dari game ini.
 
-Video Gameplay : [LINK Gameplay](youtube.com).
+Video Gameplay : [LINK Gameplay](https://www.youtube.com/watch?v=QKgxuCMY25M).
 
 ## Tampilan Gameplay Update
 ![Image of Gameplay](/Images/gameplay.png)
