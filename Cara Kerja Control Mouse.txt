@@ -1,0 +1,10 @@
+untuk mengubah controller pada spaceship dengan mouse, kami memodifikasi 2 class yang telah
+dibuat. class tersebut adalah board.java dan spaceship.java. 
+pada board.java, kita menambah class untuk mouse control bernama mouse handler. pada class 
+tersebut, segala aksi yang dilakukan oleh mouse akan dicatat dan dijadikan fungsi agar terdapat
+reaksi pada program ketika mouse melakukan suatu aksi, seperti mousemove, mouseclick dan lainnya.
+karena kami ingin object spaceship mengikuti mouse, maka kami masukkan fungsi spaceship.move
+kedalam fungsi mousemoved dengan komponen parameter tempX dan tempY yang menandakan koordinat
+mouse. hal itu yang akan membatasi pergerakan spaceship agar tidak keluar layar.
+lalu pada fungsi spaceship.move, diatur posisi spaceship, yaitu pada variabel x dan y
+diatur agar sama dengan posisi mouse yang telah dicatat oleh tempX dan tempY pada mousemoved
