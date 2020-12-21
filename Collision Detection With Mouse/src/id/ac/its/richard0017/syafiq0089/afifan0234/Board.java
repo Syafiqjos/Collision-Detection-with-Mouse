@@ -51,7 +51,11 @@ public class Board extends JPanel implements ActionListener {
     private void initBoard() {
 
         addKeyListener(new TAdapter());
-        addMouseMotionListener(new MouseHandler(B_WIDTH - ICRAFT_X / 2,B_HEIGHT - ICRAFT_Y / 2));
+        
+        MouseHandler tempHandler = new MouseHandler(B_WIDTH - ICRAFT_X,B_HEIGHT - ICRAFT_Y / 2);
+        
+        addMouseMotionListener(tempHandler);
+        addMouseListener(tempHandler);
         setFocusable(true);
         setBackground(Color.BLACK);
         ingame = true;
