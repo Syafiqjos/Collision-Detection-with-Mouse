@@ -10,10 +10,9 @@ Merupakan sebuah tugas dari mata kuliah Pemrograman Berbasis Objek, yaitu mengap
 Game ini adalah permainan tembak - tembakan pesawat. Pemain menjalankan SpaceShip yang memiliki misi atau objective untuk mengalahkan Alien - alien dengan cara menembak mereka dengan missile SpaceShip yang dimiliki Pemain. Apa bila Pemain dapat mengalahkan semua Alien dan selamat hingga akhir maka menang, sedangkan jika pemain terkena alien maka pemain akan kalah.
 Pada proyek ini terdapat updates atau perubahan antara lain adalah, pergerakan SpaceShip menggunakan Mouse, penambahan batas pergerakan SpaceShip, penambahan tembak missile dengan mouse dan juga terdapat demo video youtube yang ada.
 
-Video Gameplay : [LINK Gameplay](youtube.com)
-![Image of Gameplay](/Images/gameplay.png)
-
 # Berikut adalah tampilan gameplay dari game ini.
+
+Video Gameplay : [LINK Gameplay](youtube.com).
 
 ## Tampilan Gameplay Update
 ![Image of Gameplay](/Images/gameplay.png)
