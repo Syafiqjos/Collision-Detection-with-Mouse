@@ -52,7 +52,7 @@ public class Board extends JPanel implements ActionListener {
 
         addKeyListener(new TAdapter());
         
-        MouseHandler tempHandler = new MouseHandler(B_WIDTH - ICRAFT_X,B_HEIGHT - ICRAFT_Y / 2);
+        MouseHandler tempHandler = new MouseHandler(B_WIDTH - ICRAFT_X / 2,B_HEIGHT - ICRAFT_Y / 2);
         
         addMouseMotionListener(tempHandler);
         addMouseListener(tempHandler);
@@ -232,7 +232,7 @@ public class Board extends JPanel implements ActionListener {
             }
         }
     }
-
+    
     private class MouseHandler implements MouseMotionListener, MouseListener {
     	
     	private final int POS_X_MAX;
@@ -242,14 +242,9 @@ public class Board extends JPanel implements ActionListener {
     		POS_X_MAX = xMax;
     		POS_Y_MAX = yMax;
     	}
-    	
-        @Override
-        public void mouseDragged(MouseEvent e) {
-        }
-
-        @Override
-        public void mouseMoved(MouseEvent e) {
-        	int tempX = e.getX();
+    
+    	private void mouseMovement(MouseEvent e) {
+    		int tempX = e.getX();
         	int tempY = e.getY();
         	
         	if (tempX <= 0) {
@@ -265,17 +260,27 @@ public class Board extends JPanel implements ActionListener {
         	}
         	
         	spaceship.move(tempX, tempY);
+    	}
+    	
+        @Override
+        public void mouseDragged(MouseEvent e) {
+        	mouseMovement(e);
+        }
+
+        @Override
+        public void mouseMoved(MouseEvent e) {
+        	mouseMovement(e);
         }
 
 		@Override
 		public void mouseClicked(MouseEvent e) {
-			spaceship.fire();
+			
 		}
 
 		@Override
 		public void mousePressed(MouseEvent e) {
 			// TODO Auto-generated method stub
-			
+			spaceship.fire();
 		}
 
 		@Override
